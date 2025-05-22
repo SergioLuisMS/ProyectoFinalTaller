@@ -35,4 +35,9 @@ return [
         ],
     ],
 
+    'holded' => [
+        'token' => env('HOLDED_API_TOKEN'),
+    ],
+
+
 ];

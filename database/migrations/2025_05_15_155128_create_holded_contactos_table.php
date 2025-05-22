@@ -13,8 +13,13 @@ return new class extends Migration
     {
         Schema::create('holded_contactos', function (Blueprint $table) {
             $table->id();
+            $table->string('holded_id')->unique();  // ID real de Holded
+            $table->string('name')->nullable();
+            $table->string('email')->nullable();
+            $table->string('phone')->nullable();
             $table->timestamps();
         });
+
     }
 
     /**
